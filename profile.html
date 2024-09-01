@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+      *{
+    color: white;
+    font-family: "Roboto",sans-serif;
+    }
+    .fontsizeandhover{
+      font-size: medium;
+    }
+    .fontsizeandhover:hover{ 
+      color: #dc3545;
+    }
+      .text-center{
+     text-align: center;
+     align-self: center;
+    }
+    .t-center{
+      text-align: center;
+    }
+    .btn:hover{
+     background: #dc3545;
+    }
+    .text-danger:hover{
+     scale: 0.9;
+    }
+    .hero-section {
+    background-size: auto 100%;
+    background-position:right;
+    background-repeat: no-repeat;
+    color: #fff;
+    padding: 100px 0; /* Adjust padding as needed */
+    text-align: center;
+    }
+    .hero-image{
+    text-align: right;
+    }
+
+    .img-fluid{
+    max-width: 100%;
+    height: 400px;
+   
+    }
+
+    /* card image size*/
+    .card-img{
+      width: 100%;
+      height: 160px;
+    }
+
+      /* underline animation in button of the navbar */
+      .underline{
+        animation: name duration timing-function delay iteration-count direction fill-mode;
+        position: relative;
+      }
+      .underline::after{
+        position: absolute;
+        content: '';
+        width: 60%;
+        height: 0.175rem;
+        bottom: 0;
+        background: #dc3545;
+
+        right: 0;
+        margin-right: 13px;
+      }
+      .underline::after{
+        transform: scale(0);
+        transition: transform 0.3s ease;
+      }
+
+      .underline:hover::after{
+        transform: scale(1.3);
+      }
+      /*End underline animation in button of the navbar */ 
+
+      
+      /* image animation */
+      .im1{
+        animation-name: immg1;
+        animation-duration: 10s;
+        animation-iteration-count: infinite;
+        animation-delay: 0s;
+      }
+      @keyframes immg1 {
+        0%{
+          translate: 0 40px;
+        }
+        50%{
+          translate: 0 -40px;
+        }
+        100%{
+
+          translate: 0 40px;
+
+        }
+        
+
+      }
+
+
+
+
+
+
+
+    </style>
+</head>
+
+<body id="Home" style=" background-image: url('https://wallpapercave.com/wp/wp2757874.gif'); background-size: 100% 720px; background-repeat:repeat-y; height:2800px; background-position: center;" >
+
+    <header class="sticky-top">   
+      <!-- navbar -->
+      <nav class="navbar navbar-expand-lg" style="margin-left: 28%;">
+        <div class="container-fluid">
+          <a class="navbar-brand text-light" href="#" style="margin-right: 170px; font-size: 42px;"><strong class="text-danger">Jehadov</strong></h3></strong> </a>
+          <button class="navbar-toggler text-light bg-danger" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon text-light "></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link text-light underline" aria-current="page" href="#Homesection"><strong class="fontsizeandhover ms-2"> Home</strong></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-light underline" href="#Aboutsection"> <strong class="fontsizeandhover ms-2">About</strong></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-light underline" href="#Portfoliosection"><strong class="fontsizeandhover ms-2">Portfolio</strong></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-light underline" href="#Conract"><strong class="fontsizeandhover ms-2">Contect</strong></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+    </header>
+
+
+   <main>
+    <!-- Home section -->
+    <section id="Homesection">
+      <div class="hero-section">
+        <div class="container" style="position: relative;">
+          <h1>Welcome to My Website</h1>
+          <p>This is a sample project using bootstrap Enjoy.</p>
+          <button class="btn btn-danger btn-lg" type="button" data-bs-toggle="offcanvas" data-bs-target="#Sidebar">
+            Learn More
+          </button>
+          
+          <div class="hero-image row mt-5">
+            <div class="col-sm text-center">
+              <div class="row">
+               <h1 style="margin-bottom: 0%;">Hi, My Name is <strong class="text-danger">Jehad Taha</strong></h1></div> 
+               <strong class="d-inline" style="font-size: 60px; margin-top: 0%;"><h1 class="d-inline text-danger" style="font-size: 60px;"> Computer</h1> Engineer</strong>
+               <div><h5>I am deeply passionate about problem-solving and continually enhancing my skills across various programming languages.</h5></div>
+            </div>
+            <div class="col-sm" style="position: relative;">
+              <img src="https://bootstrapmade.com/demo/templates/Arsha/assets/img/hero-img.png" height="400px" class="animated im1">
+            </div>
+          </div>
+        </div>
+
+          <!-- Offcanvas Sidebar -->
+        <div class="offcanvas offcanvas-start" style="background-image: url('https://wallpapercave.com/wp/wp2757874.gif');" id="Sidebar">
+          <div class="offcanvas-header">
+            <h1 class="offcanvas-title text-danger">Information</h1>
+            <button type="button" class="btn-close text-reset bg-danger" data-bs-dismiss="offcanvas"></button>
+          </div>
+          <div class="offcanvas-body " style="position: relative;">
+           <p>"This project is an opportunity for me to refine my Bootstrap skills and demonstrate what I've learned so far. I’d love to show you what I've created! If it sparks your interest, I encourage you to start your own website-building adventure. Just click the Bootstrap button and discover what you can create!"</p>
+            <a href="https://getbootstrap.com/docs/5.3/content/images/#responsive-images"><button class="btn btn-danger" type="button">bootstrap-5</button></a>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <!-- About section -->
+    <section id="Aboutsection" style="padding-top:100px; margin-bottom: 150px;">
+      <h1 class="text-center titles"> <strong>About Me</strong></h1>
+      <div class="container mt-5">
+        <div class="row">
+         <div class="col-md-4 t-center" style="position: relative;">
+          <img src="https://quickshare.samsungcloud.com/ls/public/v1/links/1725188378061L2Ii4lT/contents/4a027750685111ef93ff8e15c787a47b/resized/1280?signature=KBNoHMgUK6vfyaIajYqss8v8IObbKY2LR_eDRbY0UEh5gLuxHfcW1yLDjb__gkTPibJMLxBxFd0Zl4-fQgIWWXjEjGg4lDavKt57EmDne9osNQdfCoiyHYJxg8fgea7FUEvlSRtq-Ok4Rz-np2D7OQ&storageType=file" style="opacity: 0.7"  width="400px" height="350px">
+         </div>
+         <div class="col-md-8" style="position: relative;">
+          <p>
+           I am passionate about leveraging technology to solve complex problems and create meaningful solutions. With a background in computer engineering and a keen interest in software development, I am dedicated to continually expanding my skills and expertise in the ever-evolving field of technology.
+          </p>
+          <p>
+           My journey in technology began with a degree in Computer engineering from Yarmouk University. Since then, I have gained hands-on experience working on a variety of projects.
+          </p>
+          <p>
+            Here's the final version including your familiarity with Python:
+
+            "Throughout my career, I have honed my skills in programming languages like C, C++, C#, Java, JavaScript, Python, HTML, CSS, and Bootstrap, as well as low-level languages. I’m also experienced with frameworks like React and Django, and proficient in database management systems such as SQL and MySQL, along with cloud computing platforms. Recently, I’ve expanded my expertise to become a Full Stack Developer, working with Angular, APIs, and ASP.NET Core."          </p>
+          <p>
+           I am committed to lifelong learning and am always seeking new challenges and opportunities to grow. I believe in the power of collaboration and enjoy working with diverse teams to turn innovative ideas into reality.
+          </p>
+         </div>
+        </div>
+      </div>
+  
+    </section>
+
+
+    <!-- Portfolio section -->
+    <section id="Portfoliosection">
+      <br><br> <br><br><br><br>
+      <h1 class="text-center titles"><strong>Portfolio</strong></h1>
+      <div class="container">
+        <div class="d-flex justify-content-between flex-wrap position-relative">
+          <!-- Card1 -->
+            <div class="card m-3 bg-dark mx-auto" style="width: 18rem;">
+             <img src="https://www.security.org/app/uploads/2021/03/Smart-Security-System-Image.jpg" alt="" class="card-img">
+             <div class="card-body">
+              <h5 class="card-title text-danger">home-securety-system</h5>
+              <p class="card-text">home-securety-system is a system witch save our house while we are outside or inside from outside danger</p>
+              <!-- Button to Open the Modal -->
+          <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#myModal1">
+            some tools
+          </button>
+
+                          <!-- The Modal -->
+                        <div class="modal" id="myModal1">
+                          <div class="modal-dialog">
+                            <div class="modal-content">
+                              
+                              
+                              
+                            <!-- Modal body -->
+                            <div class="modal-body bg-dark">
+                            i use in this project 1-Arduino 2-ultrasonic 3-bill camera. we connected to internet of things.
+                            </div>
+                              
+                              <!-- Modal footer -->
+                            <div class="modal-footer bg-dark">
+                          <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+                        </div>
+                              
+                      </div>
+                   </div>
+                </div>
+              </div>
+            </div>
+          <!-- Card2 -->
+            <div class="card m-3 bg-dark mx-auto" style="width: 18rem;">
+             <img src="data:image/png;base64,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" alt="" class="card-img">
+             <div class="card-body">
+              <h5 class="card-title text-danger">Indoor-Object-Localiztion</h5>
+              <p class="card-text">this project help us to read the data between the router and rceiver and find the an lost item in this close area</p>
+              <!-- Button to Open the Modal -->
+                <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#myModal2">
+                  some tools
+                </button>
+
+                <!-- The Modal -->
+                <div class="modal" id="myModal2">
+                  <div class="modal-dialog">
+                    <div class="modal-content">
+                    
+                    
+                    
+                      <!-- Modal body -->
+                      <div class="modal-body bg-dark">
+                        i use in this project 1-CSI channel state information 2-ESP32 3-Matlab 4-Access Point . in this project we use the ESP32 wifi to read the data bettween the phone and ESP32, and analyse the data on matlab and comparing and save the data to see the chanege in closed field.
+                      </div>
+                    
+                      <!-- Modal footer -->
+                      <div class="modal-footer bg-dark">
+                        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+                      </div>
+                    
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          <!-- card3 -->
+            <div class="card m-3 bg-dark mx-auto" style="width: 18rem;">
+             <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRVZNonF-E9OeK5WCre8XfUJJIFl5ADDNRyjfQ-7uB7Y7qpwYt7QjwuyLlMECmRSpPekrk&usqp=CAU" alt="" class="card-img">
+             <div class="card-body">
+              <h5 class="card-title text-danger">Bank Application system</h5>
+              <p class="card-text">A bank application system is a software platform designed to facilitate various banking operations and services</p>
+              <!-- Button to Open the Modal -->
+                <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#myModal3">
+                  some tools
+                </button>
+
+                <!-- The Modal -->
+                <div class="modal" id="myModal3">
+                  <div class="modal-dialog">
+                    <div class="modal-content">
+                    
+                    
+                    
+                      <!-- Modal body -->
+                      <div class="modal-body bg-dark">
+                        i use in this project 1-C#.oop 2-Database,SQL.
+                      </div>
+                    
+                      <!-- Modal footer -->
+                      <div class="modal-footer bg-dark">
+                        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+                      </div>
+                    
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          <!-- card4 -->
+            <div class="card m-3 bg-dark mx-auto" style="width: 18rem;">
+             <img src="https://img.freepik.com/premium-vector/online-shopping-logo-design-template-digital-shopping-logo-mouse-cursor-cart-concepts_502185-286.jpg" alt="" class="card-img">
+             <div class="card-body">
+              <h5 class="card-title text-danger">Store Website</h5>
+              <p class="card-text">A store website system is a digital platform designed to facilitate the sale of products or services to customers online</p>
+              <!-- Button to Open the Modal -->
+                <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#myModal4">
+                  some tools
+                </button>
+
+                <!-- The Modal -->
+                <div class="modal" id="myModal4">
+                  <div class="modal-dialog">
+                    <div class="modal-content">
+                    
+                    
+                    
+                      <!-- Modal body -->
+                      <div class="modal-body bg-dark">
+                        In this project, you will create a simple store website using HTML and CSS. The website will showcase products available for sale and provide an easy-to-use interface for customers to browse and purchase items. This project will help you practice structuring web pages with HTML, styling them with CSS, and creating a user-friendly layout.                       </div>
+                    
+                      <!-- Modal footer -->
+                      <div class="modal-footer bg-dark">
+                        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+                      </div>
+                    
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          <!-- card5 -->
+            <div class="card m-3 bg-dark mx-auto" style="width: 18rem;">
+             <img src="https://images.unsplash.com/opengraph/1x1.png?blend=https%3A%2F%2Fimages.unsplash.com%2Fphoto-1511367461989-f85a21fda167%3Fblend%3D000000%26blend-alpha%3D10%26blend-mode%3Dnormal%26crop%3Dfaces%252Cedges%26h%3D630%26mark%3Dhttps%253A%252F%252Fimages.unsplash.com%252Fopengraph%252Fsearch-input.png%253Fh%253D84%2526txt%253Dprofile%2526txt-align%253Dmiddle%25252Cleft%2526txt-clip%253Dellipsis%2526txt-color%253D000000%2526txt-pad%253D80%2526txt-size%253D40%2526txt-width%253D660%2526w%253D750%2526auto%253Dformat%2526fit%253Dcrop%2526q%253D60%26mark-align%3Dmiddle%252Ccenter%26mark-w%3D750%26w%3D1200%26auto%3Dformat%26fit%3Dcrop%26q%3D60%26ixid%3DM3wxMjA3fDB8MXxzZWFyY2h8Mnx8cHJvZmlsZXxlbnwwfHx8fDE3MDk5MDA0MjN8MA%26ixlib%3Drb-4.0.3&blend-w=1&h=630&mark=https%3A%2F%2Fimages.unsplash.com%2Fopengraph%2Flogo.png&mark-align=top%2Cleft&mark-pad=50&mark-w=64&w=1200&auto=format&fit=crop&q=60" alt="" class="card-img">
+             <div class="card-body">
+              <h5 class="card-title text-danger">MY Profile</h5>
+              <p class="card-text">A profile website system is a digital platform designed to showcase an individual's portfolio, skills, experiences</p>
+              <!-- Button to Open the Modal -->
+                <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#myModal5">
+                  some tools
+                </button>
+
+                <!-- The Modal -->
+                <div class="modal" id="myModal5">
+                  <div class="modal-dialog">
+                    <div class="modal-content">
+                    
+                    
+                    
+                      <!-- Modal body -->
+                      <div class="modal-body bg-dark">
+                        skills, projects, and experience. This project will provide you with an opportunity to apply my knowledge of HTML, CSS (using Bootstrap), and JavaScript to design and develop a professional-looking portfolio website.                       </div>
+                    
+                      <!-- Modal footer -->
+                      <div class="modal-footer bg-dark">
+                        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+                      </div>
+                    
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          <!-- card6 -->
+            <div class="card m-3 bg-dark mx-auto" style="width: 18rem;">
+             <img src="https://canopylab.com/wp-content/uploads/2020/05/Working-with-adaptive-quizzes-A-beginners-guide.jpg" alt="" class="card-img">
+             <div class="card-body">
+              <h5 class="card-title text-danger">Quiz Project</h5>
+              <p class="card-text">I developed a Quiz website using HTML, CSS, Bootstrap, and JavaScript, featuring dynamic content management with session storage for tracking and scoring user responses. The quiz allows users to navigate between questions and retake it as needed.</p>
+              <!-- Button to Open the Modal -->
+                <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#myModal6">
+                  some tools
+                </button>
+
+                <!-- The Modal -->
+                <div class="modal" id="myModal6">
+                  <div class="modal-dialog">
+                    <div class="modal-content">
+                    
+                    
+                    
+                      <!-- Modal body -->
+                      <div class="modal-body bg-dark">
+                        n this project, I used HTML, CSS, Bootstrap, and JavaScript to create a Quiz website. The website is designed as a single-page application where JavaScript controls the display of content, allowing it to mimic a multi-page experience. I implemented session storage to save user responses and data, which are then compared with the correct answers to calculate the user's score. The quiz allows users to navigate both forward and backward through questions and offers the option to retake the quiz after completion.
+
+                      </div>
+                    
+                      <!-- Modal footer -->
+                      <div class="modal-footer bg-dark">
+                        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+                      </div>
+                    
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+             <!-- card7 -->
+             <div class="card m-3 bg-dark mx-auto" style="width: 18rem;">
+              <img src="data:image/jpeg;base64,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" alt="" class="card-img">
+              <div class="card-body">
+               <h5 class="card-title text-danger">Hospital Management System (HMS)</h5>
+               <p class="card-text">Designed to streamline hospital operations and enhance patient care. The system aims to digitize and automate various aspects of hospital management, including patient records, appointments, staff management, and inventory control.</p>
+               <!-- Button to Open the Modal -->
+                 <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#myModal7">
+                   some tools
+                 </button>
+ 
+                 <!-- The Modal -->
+                 <div class="modal" id="myModal7">
+                   <div class="modal-dialog">
+                     <div class="modal-content">
+                     
+                     
+                     
+                       <!-- Modal body -->
+                       <div class="modal-body bg-dark">
+                        The Hospital Management System consists of the following components: <br><br> Web-based frontend for accessing and interacting with the system. <br><br> Backend server infrastructure built on ASP.NET Core for processing requests and managing data.  <br><br> Relational database management system (e.g., SQL Server) for storing patient records, appointments, staff details, and inventory information. 
+                       </div>
+                     
+                       <!-- Modal footer -->
+                       <div class="modal-footer bg-dark">
+                         <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+                       </div>
+                     
+                     </div>
+                   </div>
+                 </div>
+               </div>
+             </div>
+              <!-- card8 -->
+            <div class="card m-3 bg-dark mx-auto" style="width: 18rem;">
+              <img src="https://img.freepik.com/premium-vector/bank-system_677464-24.jpg" alt="" class="card-img">
+              <div class="card-body">
+               <h5 class="card-title text-danger">Banking System</h5>
+               <p class="card-text">Banking system aimed at providing essential financial services to customers while ensuring security, reliability, and user-friendly experience. </p>
+               <!-- Button to Open the Modal -->
+                 <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#myModal8">
+                   some tools
+                 </button>
+ 
+                 <!-- The Modal -->
+                 <div class="modal" id="myModal8">
+                   <div class="modal-dialog">
+                     <div class="modal-content">
+                     
+                     
+                     
+                       <!-- Modal body -->
+                       <div class="modal-body bg-dark">
+                        The banking system comprises the following components: <br> Web-based frontend for customer interaction and account management. <br> Backend server infrastructure running on ASP.NET Core for processing transactions and managing accounts. <br> Relational database management system (e.g., SQL Server) for storing customer data, transaction records, and account information. 
+                       </div>
+                     
+                       <!-- Modal footer -->
+                       <div class="modal-footer bg-dark">
+                         <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+                       </div>
+                     
+                     </div>
+                   </div>
+                 </div>
+               </div>
+             </div>
+        </div>
+      </div>    
+    </section>
+
+  
+  </main>
+
+   <footer style="margin-bottom: 0px; margin-top: 150px;" id="Conract">
+    <section class=" d-flex flex-sm-row flex-column" style="margin-bottom: 0; margin-top: 100px;">
+
+      <!-- Location by usig Google Map -->
+      <div class="card flex-fill bg-dark" style="position: relative;">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d840.771752751586!2d35.85504189622834!3d32.55052297840993!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sjo!4v1710447490491!5m2!1sen!2sjo" width="100%" height="100%" style="opacity: 0.7" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+      <!-- Contact Us -->
+      <div class="card  flex-fill" style="background: #01526b27; position: relative;">
+        
+        <p class="ms-5"> <h2 class="ms-5"><strong>Contact us</strong></h2></p>
+        <a href="tel:+962790730270" class="m-3" style="text-decoration: none;"><img src="https://cdn-icons-png.flaticon.com/128/5825/5825731.png" width="40"height="40" class="text-center ms-5"><q class="ms-4"> +(962)7-9073-0270 </q></a>
+        <a href="mailto:jehadmtaha@outlook.com" class="m-3" style="text-decoration: none;"><img src="https://cdn-icons-png.flaticon.com/128/2165/2165061.png" width="40"height="40" class="text-center ms-5"><q class="ms-4"> Jehadmtaha@outlook.com </q></a>
+        <a href="https://maps.app.goo.gl/bfnB44VLdksfCJfD6" class="m-3"style="text-decoration: none;"><img src="https://cdn-icons-png.flaticon.com/128/535/535239.png" width="40"height="40" class="text-center ms-5"><q class="ms-4"> Irbid,Al Nozha,Al Ummah Al Arabeyah </q></a>
+      </div>
+      <!-- Social Media -->
+      <div class="card  flex-fill" style="background: #f5000018; position: relative;">       
+        <p class="ms-5"> <h2 class="ms-5"><strong>Social Media</strong></h2></p>
+        <a href="https://www.instagram.com/taha_jehad/" class="m-3" style="text-decoration: none;"><img src="https://cdn-icons-png.flaticon.com/128/4138/4138124.png" width="40"height="40" class="text-center ms-5"><q class="ms-4"> My instagram </q></a>
+        <a href="https://www.facebook.com/profile.php?id=100086903496360" class="m-3" style="text-decoration: none;"><img src="https://cdn-icons-png.flaticon.com/128/5968/5968764.png" width="40"height="40" class="text-center ms-5"><q class="ms-4"> My Facebook </q></a>
+        <a href="https://www.linkedin.com/in/jehad-taha-2543562b2?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" class="m-3"style="text-decoration: none;"><img src="https://cdn-icons-png.flaticon.com/128/4494/4494497.png" width="40"height="40" class="text-center ms-5"><q class="ms-4"> My linkedin </q></a>
+      </div>
+            
+    </section>
+   </footer>
+
+
+    <script src="Profile.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
+
+  </body>
+</body>
+</html>
